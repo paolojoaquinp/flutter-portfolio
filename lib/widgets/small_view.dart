@@ -100,7 +100,7 @@ class SmallView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      const Text('Repositorio Github'),
+                      const Text('Repository Github'),
                       SvgPicture.asset('assets/github-icon.svg')
                     ],
                   ),
@@ -108,7 +108,8 @@ class SmallView extends StatelessWidget {
               ],
             ),
           ),
-          Image.network(imgSrc, fit: BoxFit.contain,width:  150,height: 350,),
+          const SizedBox(height: 20,),
+          Expanded(child: Image.network(imgSrc, fit: BoxFit.cover)),
         ]
       ),
     );
@@ -142,6 +143,7 @@ class SmallView extends StatelessWidget {
     final textStyle = Theme.of(context).textTheme.bodyLarge!;
     return Container(
       width: size.width,
+      padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
       child: Column(
         children: [
           const SizedBox(height: 70,),
@@ -167,19 +169,19 @@ class SmallView extends StatelessWidget {
                   ? () => utils.openInWindow(speakingResources[index]['link'].toString(), 'new tab')
                   : (){},
                 child: RichText(
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.left,
                   text: TextSpan(
                       children: <TextSpan>[
                         TextSpan(text: '• ',
-                          style: textStyle.copyWith(fontSize: 20,color: Colors.white)
+                          style: textStyle.copyWith(fontSize: 18,color: Colors.white)
                         ),
                         TextSpan(
                             text: speakingResources[index]['title'],
                             style: textStyle
-                            .copyWith(fontSize: 20,color: speakingResources[index]['link'].toString().isEmpty ? Colors.white : Colors.blue)
+                            .copyWith(fontSize: 18,color: speakingResources[index]['link'].toString().isEmpty ? Colors.white : Colors.blue)
                         ),
                         TextSpan(text: ' - ${speakingResources[index]['date']}',
-                          style: textStyle.copyWith(fontSize: 20,color: Colors.white)
+                          style: textStyle.copyWith(fontSize: 18,color: Colors.white)
                         )
                       ])),
               ),
@@ -220,12 +222,11 @@ class SmallView extends StatelessWidget {
     const String desc = "My name is Paolo Pinto, and I'm a Mobile Developer from La Paz, Bolivia. I've create in collaboration the projects like BurnoutCheck, ClosetSnaps and PushUpCounter, which are Android/IOS applications used by companies and students, respectively. Additionally, I've been fortunate to give talks, and workshops around the flutter community. \n I'm also proud to be part of GDG (Groups) La Paz in my country to inspire individuals and businesses to explore this exceptional framework.";
     return SizedBox(
       width: size.width,
-      height: size.height * 0.9,
       child: Center(
         child: Container(
           padding: EdgeInsets.all(20),
-          width:400.0,
-          height: size.height * 0.6,
+          margin: EdgeInsets.symmetric(vertical: size.height * 0.08),
+          width: size.width * 0.7,
           decoration: const BoxDecoration(
             color: kPortfolioBlack900,
             borderRadius: BorderRadius.all(Radius.circular(20))
@@ -248,8 +249,7 @@ class SmallView extends StatelessWidget {
 
   Widget _mainSectionPresentationSmall(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return Container(
-      color: Colors.amber,
+    return SizedBox(
       width: size.width,
       height: size.height,
       child: Column(
@@ -280,7 +280,7 @@ class SmallView extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: size.width * 0.9,
+            width: size.width * 0.95,
             child: LayoutBuilder(
               builder: (context, constraints) {
                 return Row(
@@ -293,7 +293,7 @@ class SmallView extends StatelessWidget {
                               style: Theme.of(context)
                                   .textTheme
                                   .bodyLarge!
-                                  .copyWith(fontSize: 28, fontWeight: FontWeight.w900),
+                                  .copyWith(fontSize: 22, fontWeight: FontWeight.w900),
                               children: <TextSpan>[
                                 TextSpan(
                                   text: 'Hello, I\'m Paolo, ',
@@ -301,7 +301,7 @@ class SmallView extends StatelessWidget {
                                       .textTheme
                                       .bodyLarge!
                                       .copyWith(
-                                          fontSize: 28,
+                                          fontSize: 22,
                                           color: Colors.blue,
                                           fontWeight: FontWeight.w900),
                                 ),
