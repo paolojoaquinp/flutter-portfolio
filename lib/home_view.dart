@@ -26,24 +26,18 @@ class _HomeViewState extends State<HomeView> {
   Widget _bodyWidget() => LayoutBuilder(
     builder: (context, constraints) {
       if(constraints.maxWidth > 1200) {
-        return ListView(
-          children: [Container(
-            constraints: BoxConstraints(
-              minHeight: MediaQuery.of(context).size.height,
-            ),
-            child: NormalView()
-          )],
+        return Container(
+          constraints: BoxConstraints(
+            minHeight: MediaQuery.of(context).size.height,
+          ),
+          child: NormalView()
         );
       } else {
-        return ListView(
-          children: [
-            Container(
-              constraints: BoxConstraints(
-                minHeight: MediaQuery.of(context).size.height,
-              ),
-              child: SmallView(),
-            ),
-          ],
+        return Container(
+          constraints: BoxConstraints(
+            minHeight: MediaQuery.of(context).size.height,
+          ),
+          child: SmallView(),
         );
       }
     }

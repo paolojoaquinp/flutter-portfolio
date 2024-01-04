@@ -10,7 +10,7 @@ class SmallView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
         _mainSectionPresentationSmall(context),
         _aboutMeSectionSmall(context),
@@ -72,7 +72,7 @@ class SmallView extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme.bodyLarge!;
     return Container(
       height: 700,
-      width: size.width * 0.6,
+      width: size.width * 0.75,
       padding: const EdgeInsets.all(24),
       margin: const EdgeInsets.only(bottom: 40),
       decoration: BoxDecoration(

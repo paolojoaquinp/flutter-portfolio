@@ -9,7 +9,7 @@ class NormalView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
         _mainSectionPresentation(context),
         _aboutMeSection(context),

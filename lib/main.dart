@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_personal/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 
 import 'home_view.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  setPathUrlStrategy();
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
