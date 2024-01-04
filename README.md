@@ -1,16 +1,32 @@
-# portfolio_personal
+# Mi Portafolio Personal
 
-A new Flutter project.
+Este repositorio contiene mi portafolio personal, que muestra mis habilidades y proyectos como desarrollador.
 
-## Getting Started
+## Características
 
-This project is a starting point for a Flutter application.
+- Sección de presentación principal
+- Sección "Sobre mí"
+- Sección de proyectos de portafolio
+- Sección de charlas públicas
+- Pie de página con información de contacto
 
-A few resources to get you started if this is your first Flutter project:
+## Tecnologías utilizadas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter para el desarrollo de la interfaz de usuario
+- Dart para la lógica de la aplicación
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Cómo ejecutar el proyecto
+
+1. Asegúrate de tener instalado Flutter y Dart en tu sistema.
+2. Clona este repositorio.
+3. Navega hasta el directorio del proyecto en tu terminal.
+4. Ejecuta `flutter pub get` para instalar las dependencias.
+5. Ejecuta `flutter run` para iniciar la aplicación.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o realiza un pull request si tienes algo que añadir.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
