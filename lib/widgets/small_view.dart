@@ -219,7 +219,7 @@ class SmallView extends StatelessWidget {
 
   Widget _aboutMeSectionSmall(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    const String desc = "My name is Paolo Pinto, and I'm a Mobile Developer from La Paz, Bolivia. I've create in collaboration the projects like BurnoutCheck, ClosetSnaps and PushUpCounter, which are Android/IOS applications used by companies and students, respectively. Additionally, I've been fortunate to give talks, and workshops around the flutter community. \n I'm also proud to be part of GDG (Groups) La Paz in my country to inspire individuals and businesses to explore this exceptional framework.";
+    const String desc = "Hi! I'm Paolo Pinto, a Software Engineer from La Paz, Bolivia. I've create in collaboration the projects like BurnoutCheck, PetFinder, and PushUpCounter, which are Android/IOS applications used by companies and students, respectively. Additionally, I've been fortunate to give talks, and workshops around the flutter community. \n I'm also proud to be part of GDG (Groups) La Paz in my country to inspire individuals and businesses to explore this exceptional framework.";
     return SizedBox(
       width: size.width,
       child: Center(
